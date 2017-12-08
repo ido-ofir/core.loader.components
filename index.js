@@ -3,10 +3,10 @@
 var name, pluginName, component, components;
 
 module.exports = {
-    name: 'core.plugin.components',
+    name: 'core.loader.components',
     dependencies: [
-        'core.plugin.hooks',
-        'core.components'
+        'core.loader.hooks',
+        'core.type.component'
     ],
     hooks: {
         'core.pluginDefinition'(pluginDefinition, next){
