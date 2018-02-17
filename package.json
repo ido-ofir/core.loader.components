@@ -1,6 +1,6 @@
 {
     "name": "core.loader.components",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "load components from plugin definition",
     "main": "index.js",
     "scripts": {
