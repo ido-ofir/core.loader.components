@@ -54,10 +54,11 @@ module.exports = {
                     if(!component.name){
                         throw new Error(`core.plugin.components - component at index ${ i } in plugin '${ pluginName }' does not have a name`);
                     }
-                    
                     component = core.assign({}, component, { 
                         name: core.prepend(pluginName, component.name),
-                        done: done
+                        done(){
+                            done();
+                        }
                     });
                     core.Component(component);
                 });
