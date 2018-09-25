@@ -11,7 +11,7 @@ core.plugin(
     require('core.loader.components')
 );
 
-// plugins can now declare actions on the plugin definition object:
+// plugins can now declare components on the plugin definition object:
 core.plugin({
     name: 'test',
     components: [
